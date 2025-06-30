@@ -1,0 +1,147 @@
+.admin-products {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+}
+
+.admin-products-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-products-header h1 {
+  color: var(--text-light);
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.admin-products-add-button {
+  background: #c8a97e;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-products-add-button:hover {
+  background: #b38b5e;
+}
+
+.admin-products-section {
+  background: var(--card-background);
+  border: 1px solid rgba(200, 169, 126, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.admin-products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.admin-product-card {
+  background: #181818;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border: 1px solid rgba(200, 169, 126, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.admin-product-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.admin-product-info {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.admin-product-description {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-product-category {
+  font-size: 0.95rem;
+  color: #c8a97e;
+}
+
+.admin-product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #c8a97e;
+}
+
+.admin-product-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.admin-product-action-button {
+  background: none;
+  border: none;
+  color: #c8a97e;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.admin-product-edit-button:hover {
+  background: #ffe0b2;
+  color: #222;
+}
+
+.admin-product-delete-button:hover {
+  background: #ffb2b2;
+  color: #222;
+}
+
+.admin-products-no-products {
+  color: #c8a97e;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.admin-products-loading {
+  color: #c8a97e;
+  text-align: center;
+}
+
+.admin-search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.admin-search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+}

@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #c8a97e;
+  --accent-color: #8b4513;
+  --text-light: #ffffff;
+  --text-dark: #1a1a1a;
+  --background-dark: #121212;
+  --card-background: #1e1e1e;
+}
+
+.home {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.home-section {
+  margin-bottom: 2.5rem;
+}
+
+.home-ad-section {
+  margin-bottom: 3.5rem;
+}
+
+.home-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #222;
+  text-align: left;
+}
+
+/* Carousel de productos */
+.product-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.carousel-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Carousel de publicidad */
+.ad-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 3rem 0;
+  gap: 1.5rem;
+}
+
+.ad-carousel-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.ad-carousel-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-carousel-btn:hover {
+  background: #1251a3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ad-carousel-img {
+    height: 200px;
+    max-width: 100vw;
+  }
+  .carousel-track {
+    gap: 0.7rem;
+  }
+  .home-section-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 0 0.2rem;
+  }
+  .ad-carousel-img {
+    height: 120px;
+  }
+  .carousel-btn, .ad-carousel-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.1rem;
+  }
+}

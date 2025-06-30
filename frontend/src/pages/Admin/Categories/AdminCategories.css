@@ -1,0 +1,130 @@
+.admin-categories {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+}
+
+.admin-categories-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.admin-categories-header h1 {
+  color: var(--text-light);
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.admin-categories-controls {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.admin-categories-search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #c8a97e;
+  font-size: 1rem;
+  background: #222;
+  color: var(--text-light);
+}
+
+.admin-categories-add-button {
+  background: #c8a97e;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-categories-add-button:hover {
+  background: #b38b5e;
+}
+
+.admin-categories-section {
+  background: var(--card-background);
+  border: 1px solid rgba(200, 169, 126, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-categories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 100%;
+  padding-right: 8px;
+}
+
+.admin-category-card {
+  background: #181818;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border: 1px solid rgba(200, 169, 126, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.admin-category-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-light);
+}
+
+.admin-category-info {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.admin-category-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.admin-categories-no-categories {
+  color: #c8a97e;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.admin-categories-loading {
+  color: #c8a97e;
+  text-align: center;
+}
+
+.admin-categories-filter-btn {
+  background: none;
+  border: none;
+  color: #c8a97e;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.admin-categories-filter-btn:hover {
+  color: #ffe0b2;
+}
