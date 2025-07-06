@@ -14,6 +14,8 @@ import { Pedido_Producto } from './models/Pedido_producto.js';
 const app = express();
 const port = 3000;
 app.use(express.json());
+const cors = require('cors');
+app.use(cors());
 
 // ------------------------------ ALUMNO 1 -----------------------------
 
